@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAva scripts</title>
+</head>
+<body>
+
+
+<input type="input" maxlength="40" id="userInput" onkeyup="showMsg()" placeholder="Enter text here...">
+<p id="userMsg"></p>
+
+
+
+
+<input type="button" onclick="Msg1()" value="Show Message 1">
+<input type="button"  onclick="Msg2()" value="Show Message 2">
+<p id="myText"></p>
+
+	<script>
+function showMsg(){
+  var userInput = document.getElementById('userInput').value;
+  document.getElementById('userMsg').innerHTML = userInput;
+}
+
+function Msg1(){
+  document.getElementById('myText').innerHTML = 'Hey <strong>Thanks!</strong>';
+}
+function Msg2(){
+  document.getElementById('myText').innerHTML = 'Try <strong>message 1</strong> again...';
+}
+</script>
+</body>
+</html>
+
